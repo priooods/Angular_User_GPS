@@ -1,0 +1,17 @@
+<body>
+    <div class="bg">
+    </div>
+    <div class="frm">
+        <h4>Create your access name</h4>
+        <form action="POST" class="mt-5" formGroup="formgroup">
+            <div class="form-group">
+                <label for="name">Add your name</label>
+                <input type="text" class="form-control" id="name" formControlName="name">
+              </div>
+        </form>
+        <div class="reg align-middle">
+            <button class="btn" (click)="onClick()">Create</button>
+            <p class="go-log">You have an account? <a style="text-decoration: none;" href="/">Login</a></p>
+        </div>
+    </div>
+</body>

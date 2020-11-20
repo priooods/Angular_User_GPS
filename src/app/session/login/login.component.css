@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+
+body{
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+.forms{
+    background: white;
+    width: 385px;
+    height: auto;
+    order: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.forms h3{
+    font-weight: 600;
+    margin-top: 80px;
+    color: rgb(61, 79, 88);
+    font-size: 30px;
+}
+
+.forms form{
+    margin-top: 30px;
+}
+
+form label{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+form img{
+    width: 17px;
+    height: 17px;
+}
+
+.forms .reg{
+    margin-top: 60px;
+    display: flex;
+}
+
+.forms .btn{
+    width: 90px;
+    height: 35px;
+    color: white;
+    font-weight: 500;
+    background-color: #14A550;
+}
+
+.forms .go-reg{
+    margin-left: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.bg{
+    display: block;
+    height: 100vh;
+    width: calc(100vw - 385px);
+    position: fixed;
+    left: 385px;
+    order: 2;
+    background-size: cover;
+    background-position: right center;
+    background-image: url("../../../assets/image_login.png");
+}
+
+.title-bg{
+    max-width: 100%;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.title-bg h4{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    width: 343px;
+    max-width: 100%;
+}
+
+.title-bg p{
+    margin-top: 50px;
+    color: white;
+    width: 343px;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 650px){
+    body{
+        display: block;
+    }
+
+    .forms{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .bg{
+        left: 0;
+        width: 100%;
+        height: 40px;
+    }
+
+    .title-bg{
+        display: none;
+    }
+
+    .forms .reg{
+        display: block;
+    }
+
+    .forms .reg button{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

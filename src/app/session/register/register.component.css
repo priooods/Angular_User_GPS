@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+.bg{
+    width: 385px;
+    height: auto;
+    order: 1;
+    background-image: url('../../../assets/layout_pattern.png'), linear-gradient(226deg, rgb(15, 114, 68) 48%, rgb(17, 97, 73) 100%);
+    position: inherit;
+    left: inherit;
+}
+
+.frm{
+    width: calc(100vw - 385px);
+    height: auto;
+    order: 2;
+    padding: 40px;
+}
+
+.frm h4{
+    margin-top: 30px;
+    color: rgb(61, 79, 88);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.frm form{
+    max-width: 100%;
+    width: 350px;
+}
+
+.frm form label{
+    color: rgb(61, 79, 88);
+    font-weight: 600;
+}
+
+.reg{
+    margin-top: 45px;
+    display: flex;
+    height: 45px;
+    align-items: center;
+}
+
+.reg .btn{
+    width: 120px;
+    height: 35px;
+    color: white;
+    font-weight: 500;
+    background-color: #14A550;
+}
+
+.reg .go-log{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+
+@media only screen and (max-width: 650px){
+    body{
+        display: block;
+    }
+
+    .bg{
+        width: 100%;
+        height: 40px;
+    }
+
+    .frm{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .frm .reg{
+        display: block;
+    }
+
+    .frm form{
+        width: 100%;
+    }
+
+    .frm .reg button{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

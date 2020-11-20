@@ -1,0 +1,45 @@
+<body>
+    <div id="map"></div>
+    <mat-accordion class="info" id="info">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Informasi
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div>
+                <h4>Your Name</h4>
+                <p></p>
+                <h4>Location Now</h4>
+                <p>{{yourOrigin}}</p>
+                <h4>Destination to</h4>
+                <p>{{yourDestination}}</p>
+                <h4>Direction to Destination</h4>
+                <p>{{yourDirection}}</p>
+            </div>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Another
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-checkbox class="example-margin" (change)="toggle($event)">Bantuan Route</mat-checkbox>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      Bantuan Route
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div id="route-false">
+                  <h5>Check pada pada bantuan route</h5>
+              </div>
+              <div id="route-true"></div>
+          </mat-expansion-panel>
+          <div class="mt-4">
+            <button type="button" class="btn btn-danger">Logout</button>
+        </div>
+    </mat-accordion>
+    
+</body>

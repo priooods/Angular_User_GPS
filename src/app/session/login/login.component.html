@@ -1,0 +1,24 @@
+<body>
+    <div id="forms" class="forms">
+        <h3>Log in to your account</h3>
+        <form action="POST" formGroup="formgroup">
+            <div class="form-group">
+                <div style="display: flex;" >
+                    <label for="name">your name</label>
+                    <img style="margin-top: 2px; margin-left: 5px;" src="https://img.icons8.com/fluent-systems-filled/24/000000/info.png" data-toggle="tooltip" data-placement="right" title="Kalau tidak dapat masuk dengan nama kamu, silahkan mendaftar ulang"/>
+                </div>
+                <input type="text" class="form-control" id="name" formControlName="name">
+              </div>
+        </form>
+        <div class="reg align-middle">
+            <button class="btn" (click)="onClick()" >Next</button>
+            <p class="go-reg">Don't have an account? <a style="text-decoration: none;" href="/register/">Register</a></p>
+        </div>
+    </div>
+    <div id="bg" class="bg">
+        <div class="title-bg">
+            <h4>Welcome to The Jungle. Good luck and don't give up</h4>
+            <p>Join with me in supporting organizations that are fighting for racial justice and equal opportunity.</p>
+        </div>
+    </div>
+</body>
