@@ -1,13 +1,13 @@
 <body>
     <div id="forms" class="forms">
         <h3>Log in to your account</h3>
-        <form action="POST" formGroup="formgroup">
+        <form action="POST" [formGroup]="forms">
             <div class="form-group">
                 <div style="display: flex;" >
-                    <label for="name">your name</label>
+                    <label for="nama">your name</label>
                     <img style="margin-top: 2px; margin-left: 5px;" src="https://img.icons8.com/fluent-systems-filled/24/000000/info.png" data-toggle="tooltip" data-placement="right" title="Kalau tidak dapat masuk dengan nama kamu, silahkan mendaftar ulang"/>
                 </div>
-                <input type="text" class="form-control" id="name" formControlName="name">
+                <input type="text" class="form-control" id="nama" formControlName="nama">
               </div>
         </form>
         <div class="reg align-middle">

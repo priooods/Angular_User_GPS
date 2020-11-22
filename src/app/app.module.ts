@@ -5,12 +5,16 @@ import { AppRoutingModule, Routing } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ConnectService } from './service/connect.service';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { FormsModule } from '@angular/forms'; 
 import { ReactiveFormsModule } from '@angular/forms';
+import { UserserviceService } from '../app/service/user/userservice.service';
+import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
+import { WebsocketService } from './service/socket/websocket.service';
+import { HttpClientModule } from '@angular/common/http';
 
+const config: SocketIoConfig = { url: 'http://localhost:8080', options: {} };
 
 @NgModule({
   declarations: [
@@ -26,9 +30,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatExpansionModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SocketIoModule.forRoot(config),
+    HttpClientModule
   ],
-  providers: [ConnectService],
+  providers: [UserserviceService, WebsocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

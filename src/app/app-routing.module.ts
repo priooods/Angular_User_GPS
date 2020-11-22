@@ -7,7 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: '', component: LoginComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard/:nama', component: DashboardComponent}
 ];
 
 @NgModule({
